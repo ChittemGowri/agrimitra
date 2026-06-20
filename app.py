@@ -1,15 +1,3 @@
-"""
-app.py
-AgriMitra — Streamlit front end.
-
-Run with: streamlit run app.py
-
-This UI deliberately shows the agent's reasoning trace (plan -> tool
-calls -> tool results -> final answer) in a side panel, because for an
-Agent Intensive capstone the ORCHESTRATION ITSELF is the thing worth
-demonstrating, not just a clean chat bubble.
-"""
-
 import os
 import uuid
 import streamlit as st
@@ -24,7 +12,6 @@ from agents.orchestrator import handle_farmer_query
 # ---------------------------------------------------------------------
 # Robust API Key Resolution for Streamlit Cloud Deployment
 # ---------------------------------------------------------------------
-# If config.GEMINI_API_KEY is missing or empty, check st.secrets directly
 if hasattr(config, 'GEMINI_API_KEY') and config.GEMINI_API_KEY:
     GEMINI_API_KEY = config.GEMINI_API_KEY
 elif "GEMINI_API_KEY" in st.secrets:
@@ -131,7 +118,6 @@ with st.sidebar:
     """)
     st.markdown("---")
     
-    # Visual check on sidebar for connection health
     if not GEMINI_API_KEY:
         st.error("⚠️ GEMINI_API_KEY not set. Add it to Secrets in Streamlit Cloud Settings.")
     else:
@@ -171,4 +157,63 @@ with col_chat:
             st.warning("Please type a question, upload an image, or pick a crop.")
         else:
             final_query = user_text.strip()
-            if
+            if quick_crop != "—" and not final_query:
+                final_query = f"What's the current market price for {quick_crop} and should I sell now?"
+            elif quick_crop != "—":
+                final_query += f" (Also check market price for {quick_crop}.)"
+
+            image_path = None
+            if uploaded_image:
+                tmp_dir = Path("data/uploaded_tmp")
+                tmp_dir.mkdir(parents=True, exist_ok=True)
+                image_path = tmp_dir / uploaded_image.name
+                image_path.write_bytes(uploaded_image.getbuffer())
+                image_path = str(image_path)
+                if not final_query:
+                    final_query = "What disease or issue does this leaf have, and what should I do?"
+
+            trace = AgentTrace()
+            with st.spinner("AgriMitra is thinking and consulting its agents..."):
+                try:
+                    answer = handle_farmer_query(
+                        session_id=st.session_state.session_id,
+                        user_text=final_query,
+                        image_path=image_path,
+                        language=language,
+                        trace=trace,
+                    )
+                    
+                    st.session_state.chat_history.append(("farmer", final_query))
+                    st.session_state.chat_history.append(("agrimitra", answer))
+                    st.session_state.last_trace = trace
+                    
+                except Exception as e:
+                    st.error(f"An error occurred while handling the query down the pipeline: {e}")
+
+    st.markdown("---")
+    st.subheader("Conversation")
+    for role, text in reversed(st.session_state.chat_history[-10:]):
+        if role == "farmer":
+            st.markdown(f"**🧑‍🌾 You:** {text}")
+        else:
+            st.markdown(f'<div class="answer-card">🌾 <b>AgriMitra:</b><br>{text}</div>',
+                        unsafe_allow_html=True)
+            st.markdown("")
+
+with col_trace:
+    st.subheader("🧠 Agent Reasoning Trace")
+    st.caption("Live view of the orchestrator's plan and tool calls")
+    if st.session_state.last_trace and st.session_state.last_trace.events:
+        st.markdown(
+            f'<div class="trace-panel">{st.session_state.last_trace.as_markdown()}</div>',
+            unsafe_allow_html=True,
+        )
+    else:
+        st.info("Ask a question to see the agent's live reasoning trace here.")
+
+st.markdown("---")
+st.caption(
+    "AgriMitra combines a Diagnosis Agent (Gemini Vision), an Advisory Agent (RAG over "
+    "agricultural extension guides), and a Market Agent (live weather + mandi prices), "
+    "coordinated by a planning Orchestrator using Gemini function calling."
+)
