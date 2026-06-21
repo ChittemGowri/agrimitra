@@ -12,12 +12,13 @@ from agents.orchestrator import handle_farmer_query
 # ---------------------------------------------------------------------
 # Robust API Key Resolution for Streamlit Cloud Deployment
 # ---------------------------------------------------------------------
-if hasattr(config, 'GEMINI_API_KEY') and config.GEMINI_API_KEY:
-    GEMINI_API_KEY = config.GEMINI_API_KEY
-elif "GEMINI_API_KEY" in st.secrets:
-    GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
-else:
-    GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", None)
+  if hasattr(config, 'NVIDIA_API_KEY') and config.NVIDIA_API_KEY:
+      NVIDIA_API_KEY = config.NVIDIA_API_KEY
+  elif "NVIDIA_API_KEY" in st.secrets:
+      NVIDIA_API_KEY = st.secrets["NVIDIA_API_KEY"]
+  else:
+      NVIDIA_API_KEY = os.environ.get("NVIDIA_API_KEY", None)
+
 
 # Set up page configurations
 st.set_page_config(
