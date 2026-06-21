@@ -21,17 +21,21 @@ VECTOR_STORE_PATH = DATA_DIR / "vector_store.json"
 MEMORY_STORE_PATH = DATA_DIR / "session_memory.json"
 
 # ---- API Keys ----
-# Get a free Gemini key at https://aistudio.google.com/app/apikey
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+# Get a free NVIDIA API key at https://build.nvidia.com/
+NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY", "")
 
 # Optional: OpenWeatherMap free tier key (https://openweathermap.org/api)
 OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY", "")
 
 # ---- Model config ----
-# gemini-2.5-flash: fast, cheap, multimodal (vision + text), good for an agent loop
-TEXT_MODEL = "gemini-2.5-flash"
-VISION_MODEL = "gemini-2.5-flash"
-EMBEDDING_MODEL = "text-embedding-004"
+# Using NVIDIA models via NVIDIA NIM or similar service
+# nemotron-3-8b-instruct: capable text model for reasoning
+# nemotron-3-8b-vision-alpha: vision model for image understanding (hypothetical name, adjust as needed)
+# nv-embed-v1: NVIDIA's embedding model
+TEXT_MODEL = "nemotron-3-8b-instruct"
+VISION_MODEL = "nemotron-3-8b-vision-alpha"  # Adjust based on actual NVIDIA vision model availability
+EMBEDDING_MODEL = "nv-embed-v1"
+
 
 # ---- App constants ----
 APP_NAME = "AgriMitra"
