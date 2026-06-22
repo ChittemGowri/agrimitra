@@ -1,0 +1,26 @@
+TOMATO LEAF CURL VIRUS (ToLCV) — Management Guide
+
+Symptoms: Upward curling of leaves, yellowing between veins, stunted
+growth, reduced fruit size. Spread primarily by whitefly (Bemisia tabaci).
+
+Cultural control:
+- Use virus-free, certified nursery seedlings.
+- Remove and destroy infected plants immediately (roguing) to prevent
+  spread to healthy plants.
+- Avoid planting tomato near cotton, okra, or cucurbits, which host
+  the same whitefly vector.
+- Maintain 60x45 cm spacing for good airflow, reducing humidity that
+  favors whitefly buildup.
+
+Chemical/biological control:
+- Yellow sticky traps at 15-20 per acre to monitor and trap whiteflies.
+- Spray neem oil (3%) or neem-based formulations at 7-10 day intervals
+  as a preventive measure, especially in the first 30 days after
+  transplanting.
+- If whitefly population is high, use recommended systemic insecticides
+  as per local Krishi Vigyan Kendra (KVK) advisory; always follow
+  label dosage and pre-harvest interval.
+
+Resistant varieties: Several hybrid tomato varieties with ToLCV
+tolerance are available through state agricultural universities;
+consult your nearest KVK for region-specific recommendations.
