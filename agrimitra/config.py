@@ -1,19 +1,10 @@
-"""
-config.py
-Central configuration for AgriMitra.
-Reads secrets from environment variables (set via .env locally,
-or Streamlit Secrets when deployed).
-
-Backend: NVIDIA NIM API (OpenAI-compatible endpoint).
-Get a free API key at https://build.nvidia.com/
-"""
-
 import os
 from pathlib import Path
-from dotenv import load_dotenv
-
-# Load variables from .env if present (local dev)
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ModuleNotFoundError:
+    pass
 
 # ---- Paths ----
 BASE_DIR = Path(__file__).resolve().parent
