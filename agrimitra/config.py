@@ -1,13 +1,3 @@
-"""
-config.py
-Central configuration for AgriMitra.
-Reads secrets from environment variables (.env locally)
-or Streamlit Secrets (when deployed on Streamlit Cloud).
-
-Backend: NVIDIA NIM API (OpenAI-compatible endpoint).
-Get a free API key at https://build.nvidia.com/
-"""
-
 import os
 from pathlib import Path
 
@@ -41,20 +31,16 @@ def _get_secret(key: str) -> str:
 
 
 # ---- API Keys ----
-# Get a free NVIDIA NIM key at https://build.nvidia.com/
-# On Streamlit Cloud: add it under Settings → Secrets as NVIDIA_API_KEY = "nvapi-..."
 NVIDIA_API_KEY = _get_secret("NVIDIA_API_KEY")
-
-# Optional: OpenWeatherMap key (app works without it — uses Open-Meteo by default)
 OPENWEATHER_API_KEY = _get_secret("OPENWEATHER_API_KEY")
 
 # ---- NVIDIA NIM endpoint ----
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
 
 # ---- Model config ----
-TEXT_MODEL = "meta/llama-3.3-70b-instruct"       # orchestrator + advisory synthesis
-VISION_MODEL = "nvidia/llama-3.2-90b-vision-instruct"   # leaf diagnosis
-EMBEDDING_MODEL = "nvidia/llama-3.2-nv-embedqa-1b-v2"   # RAG embeddings
+TEXT_MODEL = "meta/llama-3.3-70b-instruct"
+VISION_MODEL = "nvidia/llama-3.2-90b-vision-instruct"
+EMBEDDING_MODEL = "nvidia/llama-3.2-nv-embedqa-1b-v2"
 
 # ---- App constants ----
 APP_NAME = "AgriMitra"
