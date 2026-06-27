@@ -1,0 +1,43 @@
+TOMATO CROP DISEASE MANAGEMENT — ANDHRA PRADESH EXTENSION GUIDE
+
+Early Blight (Alternaria solani)
+Early blight is one of the most common tomato diseases in the Chittoor and Madanapalle regions.
+Symptoms: Brown circular spots with concentric rings ("target board" pattern) on older leaves. Yellow halos around spots. Leaves eventually yellow and fall off.
+Cause: Fungal pathogen Alternaria solani, spreads during humid, warm weather (24–29°C).
+Management:
+- Remove and destroy infected leaves immediately.
+- Apply Mancozeb 75% WP @ 2.5 g/litre or Chlorothalonil 75% WP @ 2 g/litre as foliar spray.
+- Repeat sprays every 7–10 days during high humidity periods.
+- Practice 2–3 year crop rotation; avoid planting tomato after tomato.
+- Use resistant varieties such as Arka Rakshak.
+
+Late Blight (Phytophthora infestans)
+Late blight is a serious disease, particularly during the northeast monsoon (October–December).
+Symptoms: Water-soaked, greyish-green lesions on leaves; white mould visible on undersides. Dark brown patches on stems and fruits.
+Management:
+- Spray Metalaxyl + Mancozeb (Ridomil Gold) @ 2.5 g/litre at first sign.
+- Follow up with Cymoxanil + Mancozeb @ 2 g/litre every 7 days.
+- Ensure good drainage in the field; avoid overhead irrigation.
+- Destroy infected plant debris promptly.
+
+Leaf Curl Virus (Tomato Leaf Curl Virus — ToLCV)
+Cause: Transmitted by whitefly (Bemisia tabaci).
+Symptoms: Upward or downward curling of leaves, stunted plant growth, yellow margins.
+Management:
+- Control whitefly with Imidacloprid 17.8% SL @ 0.3 ml/litre or Thiamethoxam 25 WG @ 0.3 g/litre.
+- Use yellow sticky traps @ 10–12 per acre.
+- Remove and burn infected plants to prevent spread.
+- Plant virus-free seedlings from certified nurseries.
+
+Bacterial Wilt (Ralstonia solanacearum)
+Symptoms: Sudden wilting of the entire plant; vascular tissue turns brown. Squeeze the cut stem into water — milky bacterial ooze confirms the diagnosis.
+Management:
+- No effective chemical treatment once infected.
+- Remove entire plant with roots and burn.
+- Solarise soil for 4–6 weeks before replanting.
+- Apply bleaching powder @ 20 kg/acre into soil before transplanting.
+
+Nutrient Deficiency in Tomato
+Nitrogen deficiency: Pale yellow leaves starting from older growth; stunted plants. Apply urea @ 10 kg/acre as top dressing.
+Magnesium deficiency: Interveinal chlorosis (yellowing between veins on older leaves). Spray MgSO4 @ 10 g/litre.
+Calcium deficiency: Blossom end rot (dark sunken patch at fruit base). Apply calcium nitrate foliar spray @ 5 g/litre; avoid water stress.

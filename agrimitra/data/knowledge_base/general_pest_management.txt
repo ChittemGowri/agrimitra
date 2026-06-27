@@ -1,0 +1,37 @@
+INTEGRATED PEST MANAGEMENT (IPM) FOR ANDHRA PRADESH VEGETABLE CROPS
+
+1. Cultural Control (first line of defence)
+- Crop rotation: Never plant the same family of crops in the same field two seasons in a row. This breaks pest and disease cycles.
+- Sanitation: Remove crop debris after harvest and burn or compost it away from the field.
+- Proper plant spacing: Crowded plants have poor air circulation and are more prone to fungal diseases.
+- Trap crops: Plant marigold borders around tomato fields to repel thrips and whiteflies.
+
+2. Biological Control
+- Trichogramma egg parasitoids: Release @ 1.5 lakh cards/acre for fruit borer control (Helicoverpa armigera).
+- NPV (Nucleopolyhedrosis virus): Spray 250 LE/acre for Helicoverpa control. Mix with 1 kg jaggery/acre as attractant.
+- Neem-based pesticides (Azadirachtin 0.03% EC @ 3 ml/litre): Effective against mites, whiteflies, and soft-bodied pests.
+
+3. Chemical Control — Safety Guidelines
+- Always wear gloves, mask, and protective clothing when mixing and spraying.
+- Spray early morning or evening — avoid midday spray when bees are active.
+- Maintain Pre-Harvest Intervals (PHI): Imidacloprid (7 days), Chlorpyriphos (15 days), Profenophos (7 days).
+- Never spray flowering crops with Imidacloprid or other systemic insecticides (bee toxicity risk).
+- Rotate chemical groups to prevent resistance development.
+
+4. Common Pest Identification
+Fruit and Shoot Borer (Leucinodes orbonalis) — Brinjal:
+- Dead shoots with entry holes; fruits with frass-filled tunnels.
+- Spray Emamectin benzoate 5% SG @ 0.4 g/litre or Chlorfenapyr @ 2 ml/litre.
+
+Whitefly (Bemisia tabaci):
+- Yellowing, sticky leaves; sooty mould. Vector for leaf curl virus.
+- Imidacloprid 17.8% SL @ 0.3 ml/litre OR Spiromesifen 22.9% SC @ 0.75 ml/litre.
+
+Red Spider Mite (Tetranychus urticae):
+- Bronze discolouration of leaves; fine webbing on undersides.
+- Dicofol 18.5% EC @ 2.5 ml/litre or Hexythiazox 5.45% EC @ 1 ml/litre.
+
+5. Irrigation and Water Management
+- Drip irrigation reduces foliar disease incidence vs flood irrigation.
+- Avoid irrigation in the evening — wet foliage overnight promotes fungal growth.
+- Deficit irrigation during reproductive stage reduces fruit quality. Maintain consistent soil moisture.
